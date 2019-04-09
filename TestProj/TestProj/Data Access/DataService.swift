@@ -39,30 +39,49 @@ class DataService {
         do {
              try FileManager.default.removeItem(at: path)
         } catch {
-            os_log("Couldn'tdelete: %{public}@", path.absoluteString)
+            os_log("Couldn't delete: %{public}@", path.absoluteString)
         }
     }
 
     public static func load() -> [Event] {
         var events = [Event]()
 
-        do {
-            let directoryContents = try FileManager.default.contentsOfDirectory(at: archiveURL, includingPropertiesForKeys: nil, options: [])
-            let files = directoryContents.filter { $0.pathExtension == "plist" }
-            for item in files {
-                if let codedData = try? Data(contentsOf: item) {
-                    if let event = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(codedData) as? Event,
-                        let unarchivedEvent = event {
-                        faveIDs.append(unarchivedEvent.eventId)
-                        events.append(unarchivedEvent)
-                    }
-                }
+        for item in DataService.allReadableFiles() ?? [] {
+            if let codedData = try? Data(contentsOf: item),
+                let event = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(codedData) as? Event,
+                    let unarchivedEvent = event {
+                    faveIDs.append(unarchivedEvent.eventId)
+                    events.append(unarchivedEvent)
             }
-
-        } catch {
-            // the directory is either empty or doesn't exist
         }
 
         return events
+    }
+
+    public static func load(eventId: NSNumber) -> Event? {
+        for item in DataService.allReadableFiles() ?? [URL]() {
+            if item.absoluteString.contains("\(eventId)") {
+                if let codedData = try? Data(contentsOf: item),
+                    let event = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(codedData) as? Event,
+                    let unarchivedEvent = event {
+                        return unarchivedEvent
+                }
+            }
+        }
+
+        return nil
+    }
+
+    private static func allReadableFiles() -> [URL]? {
+        do {
+            let directoryContents = try FileManager.default.contentsOfDirectory(at: DataService.archiveURL, includingPropertiesForKeys: nil, options: [])
+            let files = directoryContents.filter { $0.pathExtension == "plist" }
+
+            return files
+        } catch {
+            os_log("Coudn't load data from %{public}", DataService.archiveURL.absoluteString)
+        }
+
+        return [URL]()
     }
 }
