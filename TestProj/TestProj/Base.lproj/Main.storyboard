@@ -159,7 +159,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXX-D0-R9f">
-                                            <rect key="frame" x="92" y="11" width="220" height="24"/>
+                                            <rect key="frame" x="92" y="11" width="212" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="By3-cP-OxE"/>
                                             </constraints>
@@ -191,7 +191,7 @@
                                     <constraints>
                                         <constraint firstItem="ZHM-11-Om6" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leadingMargin" id="5nG-37-pTk"/>
                                         <constraint firstItem="WmT-X8-Bf6" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leadingMargin" constant="-6" id="8PD-TL-8Fz"/>
-                                        <constraint firstItem="TXX-D0-R9f" firstAttribute="trailing" secondItem="37f-cq-3Eg" secondAttribute="trailingMargin" constant="8" id="9Oj-m2-joN"/>
+                                        <constraint firstItem="TXX-D0-R9f" firstAttribute="trailing" secondItem="37f-cq-3Eg" secondAttribute="trailingMargin" id="9Oj-m2-joN"/>
                                         <constraint firstItem="jYX-t8-04n" firstAttribute="trailing" secondItem="37f-cq-3Eg" secondAttribute="trailingMargin" constant="8" id="DPO-FF-Qlz"/>
                                         <constraint firstItem="TXX-D0-R9f" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" id="Ecd-Nd-cxU"/>
                                         <constraint firstItem="jYX-t8-04n" firstAttribute="top" secondItem="TXX-D0-R9f" secondAttribute="bottom" constant="2" id="Jam-Qj-Yvw"/>
