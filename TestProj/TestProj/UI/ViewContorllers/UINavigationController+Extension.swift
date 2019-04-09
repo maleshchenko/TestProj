@@ -1,5 +1,6 @@
 import UIKit
 
+// used by "details" part of split screen and a standalone navigation controller that displays "Details" on iPhone
 extension UINavigationController {
     public func customizeNavBarAppearance() {
 

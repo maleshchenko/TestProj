@@ -1,5 +1,6 @@
 import UIKit
 
+// Customized navigation controller for detail screen
 class CustomNavigationController: UINavigationController {
 
     var needsToUpdateTitleLabel = true
@@ -7,6 +8,8 @@ class CustomNavigationController: UINavigationController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
+        // we're using splitView controllers so in certain cases we need
+        // to update details controller appearance after rotation
         if needsToUpdateTitleLabel && !Utils.isiPad() {
             updateAppearance()
         }
@@ -34,6 +37,8 @@ class CustomNavigationController: UINavigationController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .automatic
 
+        // to make sure title keeps diplaying in all orientation and screen sizes,
+        // we need to provide correct text alltibutes
         self.navigationController?.navigationBar.largeTitleTextAttributes = Utils.titleAttributes(large: true)
         self.navigationController?.navigationBar.titleTextAttributes = Utils.titleAttributes(large: false)
 
@@ -43,6 +48,8 @@ class CustomNavigationController: UINavigationController {
 
 extension UINavigationController {
     override open var preferredStatusBarStyle: UIStatusBarStyle {
+
+        // we're getting back to home screen, return to the initial bar style
         if viewControllers.count == 1 {
             return .lightContent
         }
