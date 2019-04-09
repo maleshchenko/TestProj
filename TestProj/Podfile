@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'TestProj' do
+
+  use_frameworks!
+
+  pod 'SwiftLint'
+  #pod 'SwiftHash'
+
+  target 'TestProjTests' do
+  	inherit! :search_paths
+    #pod 'SwiftLint'
+    #pod 'SwiftHash'
+  end
+
+end
