@@ -9,7 +9,6 @@ target 'TestProj' do
 
   target 'TestProjTests' do
   	inherit! :search_paths
-    pod 'SwiftLint'
   end
 
 end
