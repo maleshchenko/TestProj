@@ -1,4 +1,5 @@
 
 TestProj/Pods/*
-TestProj/TestProj.xcodeproj/project.xcworkspace/xcuserdata/mykolaaleshchenko.xcuserdatad/UserInterfaceState.xcuserstate
-TestProj/TestProj.xcworkspace/xcuserdata/mykolaaleshchenko.xcuserdatad/UserInterfaceState.xcuserstate
+TestProj/TestProj.xcodeproj/project.xcworkspace/xcuserdata/*
+TestProj/TestProj.xcworkspace/xcuserdata/*
+TestProj/.DS_Store
