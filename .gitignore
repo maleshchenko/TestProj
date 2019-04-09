@@ -3,3 +3,8 @@ TestProj/Pods/*
 TestProj/TestProj.xcodeproj/project.xcworkspace/xcuserdata/*
 TestProj/TestProj.xcworkspace/xcuserdata/*
 TestProj/.DS_Store
+*.xcbkptlist
+TestProj/TestProj/.DS_Store
+TestProj/TestProj.xcworkspace/xcuserdata/mykolaaleshchenko.xcuserdatad/UserInterfaceState.xcuserstate
+TestProj/TestProj.xcworkspace/xcuserdata/mykolaaleshchenko.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+*.xcbkptlist
