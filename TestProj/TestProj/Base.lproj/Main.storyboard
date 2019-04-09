@@ -168,7 +168,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYX-t8-04n">
-                                            <rect key="frame" x="92" y="38" width="220" height="16"/>
+                                            <rect key="frame" x="92" y="37" width="220" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="lVL-1s-96j"/>
                                             </constraints>
@@ -177,7 +177,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-FY-zPe" userLabel="No date">
-                                            <rect key="frame" x="92" y="59" width="220" height="16"/>
+                                            <rect key="frame" x="92" y="56" width="220" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="Y42-Ou-GVf"/>
                                                 <constraint firstAttribute="height" constant="16" id="nmw-hE-eTq"/>
@@ -194,10 +194,10 @@
                                         <constraint firstItem="TXX-D0-R9f" firstAttribute="trailing" secondItem="37f-cq-3Eg" secondAttribute="trailingMargin" constant="8" id="9Oj-m2-joN"/>
                                         <constraint firstItem="jYX-t8-04n" firstAttribute="trailing" secondItem="37f-cq-3Eg" secondAttribute="trailingMargin" constant="8" id="DPO-FF-Qlz"/>
                                         <constraint firstItem="TXX-D0-R9f" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" id="Ecd-Nd-cxU"/>
-                                        <constraint firstItem="jYX-t8-04n" firstAttribute="top" secondItem="TXX-D0-R9f" secondAttribute="bottom" constant="3" id="Jam-Qj-Yvw"/>
+                                        <constraint firstItem="jYX-t8-04n" firstAttribute="top" secondItem="TXX-D0-R9f" secondAttribute="bottom" constant="2" id="Jam-Qj-Yvw"/>
                                         <constraint firstItem="ZHM-11-Om6" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" constant="12" id="NXO-Cx-f1O"/>
                                         <constraint firstAttribute="bottom" secondItem="ZHM-11-Om6" secondAttribute="bottom" constant="12" id="QZT-ys-39E"/>
-                                        <constraint firstItem="xL3-FY-zPe" firstAttribute="top" secondItem="jYX-t8-04n" secondAttribute="bottom" constant="5" id="bTs-mg-8Ns"/>
+                                        <constraint firstItem="xL3-FY-zPe" firstAttribute="top" secondItem="jYX-t8-04n" secondAttribute="bottom" constant="3" id="bTs-mg-8Ns"/>
                                         <constraint firstAttribute="trailing" secondItem="xL3-FY-zPe" secondAttribute="trailing" constant="8" id="gIg-Pb-yg9"/>
                                         <constraint firstItem="WmT-X8-Bf6" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" constant="2" id="sIw-fY-eNQ"/>
                                         <constraint firstItem="xL3-FY-zPe" firstAttribute="leading" secondItem="ZHM-11-Om6" secondAttribute="trailing" constant="16" id="stW-pa-cyc"/>
