@@ -87,6 +87,8 @@ class MasterViewController: UIViewController {
 }
 
 extension UISplitViewController {
+    // We need different status bar styles for master and detail screens.
+    // Overriding master's status bar style to .lightContent when needed
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         let master = viewControllers.first
         
